@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ac.ModifyPayPwdActivity">
+
+    <LinearLayout style="@style/LLMe">
+
+        <EditText
+            android:id="@+id/et_opwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="原密码"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:textSize="18sp" />
+
+        <View style="@style/Line" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LLMe">
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="新密码"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:textSize="18sp" />
+
+        <View style="@style/Line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok"
+        style="@style/btn.Blue"
+        android:text="确定" />
+</LinearLayout>

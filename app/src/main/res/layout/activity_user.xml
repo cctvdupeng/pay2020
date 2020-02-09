@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ac.UserActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="18dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_tuijian"
+        style="@style/LLMe">
+
+        <View style="@style/Line" />
+
+        <TextView
+            style="@style/MeTxt"
+            android:text="我的推荐" />
+
+        <View style="@style/Line" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/LLMe"
+        android:id="@+id/ll_incoming">
+
+        <View style="@style/Line" />
+
+        <TextView
+            style="@style/MeTxt"
+            android:text="推荐二维码" />
+
+        <View style="@style/Line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_version"
+        style="@style/LLMe">
+
+        <View style="@style/Line" />
+
+        <TextView
+            style="@style/MeTxt"
+            android:text="检查版本" />
+
+        <View style="@style/Line" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/LLMe"
+        android:id="@+id/ll_pwd"
+        >
+
+        <View style="@style/Line" />
+
+        <TextView
+            style="@style/MeTxt"
+            android:text="修改登录密码" />
+
+        <View style="@style/Line" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/LLMe"
+        android:id="@+id/ll_pay_pwd">
+
+        <View style="@style/Line" />
+
+        <TextView
+            style="@style/MeTxt"
+            android:text="修改支付密码" />
+
+        <View style="@style/Line" />
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/LLMe"
+
+        android:id="@+id/ll_detail">
+
+        <View style="@style/Line" />
+
+        <TextView
+            style="@style/MeTxt"
+            android:text="资金明细" />
+
+        <View style="@style/Line" />
+    </LinearLayout>
+    <LinearLayout style="@style/LLMe"
+
+        android:id="@+id/ll_get_cash">
+
+        <View style="@style/Line" />
+
+        <TextView
+            style="@style/MeTxt"
+            android:text="提现" />
+
+        <View style="@style/Line" />
+    </LinearLayout>
+</LinearLayout>

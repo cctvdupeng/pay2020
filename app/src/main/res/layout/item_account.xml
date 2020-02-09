@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:padding="18dp"
+        android:paddingRight="18dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="id"
+            android:id="@+id/item_tv_id"
+
+            style="@style/ItemTitle" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="id"
+            style="@style/ItemTitle"
+            android:textSize="18sp"
+            android:id="@+id/item_tv_name"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:text="未绑定"
+            android:background="@drawable/btn"
+            android:textColor="@android:color/white"
+            android:padding="0dp"
+            android:id="@+id/item_tv_bind"
+            style="@style/ItemTitle"
+             />
+
+    </LinearLayout>
+</LinearLayout>

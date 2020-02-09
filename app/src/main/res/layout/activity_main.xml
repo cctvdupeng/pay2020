@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+<!--    <android.support.design.widget.TabLayout-->
+<!--        android:id="@+id/tl_home"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:tabGravity="fill"-->
+<!--        app:tabIndicatorColor="?attr/colorPrimary"-->
+<!--        app:tabMode="scrollable"-->
+<!--        app:tabSelectedTextColor="?attr/colorPrimaryDark"-->
+<!--        app:tabTextColor="?attr/colorPrimary" />-->
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"
+        android:id="@+id/cb_show"
+        android:text="开启应用前台展示,若退出账户或提现 请取消勾选,并点击解绑 停止收单" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cb_show"
+        android:id="@+id/cb_tip"
+
+        android:visibility="gone"
+        android:text="是否断开提醒" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cb_tip"
+        android:id="@+id/cb_query"
+
+        android:text="是否开启订单查询" />
+
+
+
+    <com.mfypay.pay3.view.HorizontalListView
+        android:id="@+id/horizontal_lv"
+        android:layout_marginTop="1dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="100dp" />
+
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        app:layout_constraintTop_toBottomOf="@id/cb_query"></androidx.viewpager.widget.ViewPager>
+</LinearLayout>
